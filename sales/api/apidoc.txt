@@ -1,0 +1,50 @@
+API Documentation
+-------------
+
+Base URL/Root URL
+-----------------
+
+http://localhost/uefa/api/v1/
+
+Endpoints | Method
+------------------
+addmember.php | POST
+updatemember.php | PUT
+fetchmember.php | GET
+fetchallmembers.php | GET
+deletemember.php | deletemember
+
+addmember.php Endpoints
+-----------------------
+URI: http://localhost/uefa/api/v1/addmember.php
+
+Request payload
+{
+    "lastname": "Cook",
+    "firstname": "Tim",
+    "dob": "2000-10-20",
+    "phone": "2348080721800",
+    "desc": "Danladi Bako a journalist",
+    "email": "bako@mail.net",
+    "password": "123456"
+}
+
+Response payload
+{
+    "status": "success",
+    "message": "Account created successfully",
+    "date": []
+}
+
+Upate Request payload
+{
+    "lastname": "Cook",
+    "firstname": "Timmy",
+    "dob": "2000-10-20",
+    "phone": "2348080455463",
+    "desc": "Now is a film maker",
+    "userid": 2
+  
+}
+
+
